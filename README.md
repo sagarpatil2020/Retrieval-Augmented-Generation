@@ -32,12 +32,12 @@ STEP 4: Test the System
 
 
 # RAG-PIPELINE 
-INDEXING - 
+ ## INDEXING - 
 1. The PDF document is split into smaller chunks of text.
 2. Each chunk is converted into a vector representation using the Google Gemini embedding model.
 3. The vectors are stored in a Qdrant vector store for efficient retrieval.
-RETRIEVAL -
+ ## RETRIEVAL -
 1. When a user query is received, it is also converted into a vector using the same embedding model.
 2. The vector store is queried to retrieve the most relevant chunks of text based on cosine similarity.
-ANSWER GENERATION -
+ ## ANSWER GENERATION -
 1. The retrieved chunks of text are used as context to generate an answer to the user's query.
